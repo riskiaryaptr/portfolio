@@ -12,9 +12,9 @@ const achievements = [
     },
     {
         id: 2,
-        title: "Coding Camp DBS Foundation (Front-End and Back End Developer)",
-        issuer: "DBS Foundation & Dicoding",
-        issuedDate: "July 2025",
+        title: "Digital Talent Scholarship 2025 - Data Science and Micro Skill Development",
+        issuer: "Kominfo & Pusat Pengembangan Literasi Digital",
+        issuedDate: "October 2025",
         image: "/src/assets/achievements/certificate-02.jpg"
     },
 ];
@@ -93,7 +93,7 @@ export default function Achievements() {
                                                 {achievement.title}
                                             </h3>
 
-                                            <p className="text-sm font-medium text-gray-500 leading-normal tracking-wide mb-2">
+                                            <p className="text-sm font-medium text-gray-500 leading-normal tracking-wide mb-2 line-clamp-1">
                                                 {achievement.issuer}
                                             </p>
 

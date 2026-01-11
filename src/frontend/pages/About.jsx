@@ -210,7 +210,7 @@ export default function About() {
                                 </div>
                             </div>
 
-                            <div className="mt-8">
+                            <div className="mt-8 border-b border-gray-300 pb-8">
                                 <div className="flex items-center gap-x-2">
                                     <AcademicCapIcon className="h-5 w-5 text-gray-800" />
                                     <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Education</h2>
