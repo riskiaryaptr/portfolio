@@ -19,10 +19,10 @@ export default function Index() {
                             </div>
                         
                             <p className="mt-4.5 text-body leading-loose tracking-tight font-medium text-gray-600 border-b border-gray-200 pb-7">
-                                Experienced and passionate Frontend Developer specializing in building scalable, responsive, and accessible user interfaces using JavaScript, React, and Tailwind CSS. I focus on creating clean, maintainable code and delivering high-performance user experiences with strong attention to detail and usability. I am dedicated to continuous learning and always strive to stay ahead of industry trends to ensure I am using the most effective tools and techniques.
+                                Experienced and passionate Frontend Developer specializing in building scalable, responsive, and accessible user interfaces using JavaScript, React, Laravel, Tailwind CSS, and Bootstrap. I focus on creating clean, maintainable code and delivering high-performance user experiences with strong attention to detail and usability. I am dedicated to continuous learning and always strive to stay ahead of industry trends to ensure I am using the most effective tools and techniques.
                             </p>
 
-                            <div className="mt-7 border-b border-gray-200 pb-8">
+                            <div className="mt-6 border-b border-gray-200 pb-8">
                                 <div className="flex items-center gap-x-2">
                                     <span className="font-bold text-lg tracking-wide leading-normal text-gray-700">{"</>"} Skills</span>
                                 </div>

@@ -112,7 +112,7 @@ export default function About() {
                         
                             <div className="mt-5 space-y-2.5">
                                 <p className="text-body leading-loose tracking-tight font-medium text-gray-600">
-                                    Hello there! Thank you for visiting my personal website. I'm Riski Arya Putra, a student at Universitas Muhammadiyah Semarang, originally from Demak. I'm a Frontend Developer with a passion for building impactful software products. My expertise focuses on modern technologies like React, JavaScript, Tailwind CSS, and Laravel.
+                                    Hello there! Thank you for visiting my personal website. I'm Riski Arya Putra, a student at Universitas Muhammadiyah Semarang, originally from Demak. I'm a Frontend Developer with a passion for building impactful software products. My expertise focuses on modern technologies like React, JavaScript, Tailwind CSS, Bootstrap, and Laravel.
                                 </p>
 
                                 <p className="text-body leading-loose tracking-tight font-medium text-gray-600">
