@@ -148,7 +148,7 @@ export default function About() {
                                 <p className="font-signature text-[25px] font-bold text-blue-500">Riski Arya Putra</p>
                             </div>
 
-                            <div className="mt-8 border-b border-gray-300 pb-8">
+                            <div className="mt-6 border-b border-gray-300 pb-8">
                                 <div className="flex items-center gap-x-2">
                                     <SparklesIcon className="h-5 w-5 text-gray-800" />
                                     <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Experience</h2>
@@ -210,7 +210,7 @@ export default function About() {
                                 </div>
                             </div>
 
-                            <div className="mt-8 border-b border-gray-300 pb-8">
+                            <div className="mt-6 border-b border-gray-300 pb-8">
                                 <div className="flex items-center gap-x-2">
                                     <AcademicCapIcon className="h-5 w-5 text-gray-800" />
                                     <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Education</h2>
@@ -270,7 +270,7 @@ export default function About() {
                                 </div>
                             </div>
 
-                            <div className="mt-8">
+                            <div className="mt-6">
                                 <div className="flex items-center gap-x-2">
                                     <UserGroupIcon className="h-5 w-5 text-gray-800" />
                                     <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Organizations</h2>
