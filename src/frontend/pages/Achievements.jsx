@@ -10,6 +10,13 @@ const achievements = [
         issuedDate: "July 2025",
         image: "/src/assets/achievements/certificate-01.jpg"
     },
+    {
+        id: 2,
+        title: "Coding Camp DBS Foundation (Front-End and Back End Developer)",
+        issuer: "DBS Foundation & Dicoding",
+        issuedDate: "July 2025",
+        image: "/src/assets/achievements/certificate-02.jpg"
+    },
 ];
 
 export default function Achievements() {
