@@ -110,9 +110,11 @@ const organizations = [
 ];
 
 export default function About() {
-    const [expandedExp, setExpandedExp] = useState(null);
-    const [expandedEdu, setExpandedEdu] = useState(null);
-    const [expandedOrg, setExpandedOrg] = useState(null);
+    const [expandedItem, setExpandedItem] = useState(null);
+
+    const toggleAccordion = (id) => {
+        setExpandedItem(expandedItem === id ? null : id);
+    };
 
     return (
         <div className="bg-white min-h-screen">
@@ -185,12 +187,12 @@ export default function About() {
                                                         <span>{exp.mode}</span>
                                                     </div>
 
-                                                    <button onClick={() => setExpandedExp(expandedExp === index ? null : index)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
-                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedExp === index ? 'rotate-90' : ''}`} />
-                                                        {expandedExp === index ? 'Hide' : 'Show'} responsibilities
+                                                    <button onClick={() => toggleAccordion(`exp-${index}`)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
+                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedItem === `exp-${index}` ? 'rotate-90' : ''}`} />
+                                                        {expandedItem === `exp-${index}` ? 'Hide' : 'Show'} responsibilities
                                                     </button>
 
-                                                    {expandedExp === index && (
+                                                    {expandedItem === `exp-${index}` && (
                                                         <div className="mt-4 pt-4 border-t border-gray-200">
                                                             <h4 className="text-[14px] font-semibold text-gray-700 mb-2.5">Key Responsibilities:</h4>
                                                             <ul className="space-y-2">
@@ -245,12 +247,12 @@ export default function About() {
                                                         <span>{edu.type}</span>
                                                     </div>
 
-                                                    <button onClick={() => setExpandedEdu(expandedEdu === index ? null : index)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
-                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedEdu === index ? 'rotate-90' : ''}`} />
-                                                        {expandedEdu === index ? 'Hide' : 'Show'} responsibilities
+                                                    <button onClick={() => toggleAccordion(`edu-${index}`)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
+                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedItem === `edu-${index}` ? 'rotate-90' : ''}`} />
+                                                        {expandedItem === `edu-${index}` ? 'Hide' : 'Show'} responsibilities
                                                     </button>
 
-                                                    {expandedEdu === index && (
+                                                    {expandedItem === `edu-${index}` && (
                                                         <div className="mt-4 pt-4 border-t border-gray-200">
                                                             <h4 className="text-[14px] font-semibold text-gray-700 mb-2.5">Activities and Achievements:</h4>
                                                             <ul className="space-y-2">
@@ -305,12 +307,12 @@ export default function About() {
                                                         <span>{org.type}</span>
                                                     </div>
 
-                                                    <button onClick={() => setExpandedOrg(expandedOrg === index ? null : index)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
-                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedOrg === index ? 'rotate-90' : ''}`} />
-                                                        {expandedOrg === index ? 'Hide' : 'Show'} responsibilities
+                                                    <button onClick={() => toggleAccordion(`org-${index}`)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
+                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedItem === `org-${index}` ? 'rotate-90' : ''}`} />
+                                                        {expandedItem === `org-${index}` ? 'Hide' : 'Show'} responsibilities
                                                     </button>
 
-                                                    {expandedOrg === index && (
+                                                    {expandedItem === `org-${index}` && (
                                                         <div className="mt-4 pt-4 border-t border-gray-200">
                                                             <h4 className="text-[14px] font-semibold text-gray-700 mb-2.5">Key Activities:</h4>
                                                             <ul className="space-y-2">
