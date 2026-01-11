@@ -53,7 +53,7 @@ export default function Achievements() {
                                         <div className="absolute right-0 mt-2 w-full sm:w-64 bg-white border border-gray-200 rounded-xl shadow-lg z-50 overflow-hidden">
                                             <div className="relative p-3 border-b border-gray-100">
                                                 <MagnifyingGlassIcon className="absolute left-6 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-                                                <input type="text" placeholder="Search achievements..." className="w-full pl-9 pr-3 py-2 text-sm text-gray-600 placeholder-gray-400 bg-transparent focus:outline-none"/>
+                                                <input type="text" placeholder="Search..." className="w-full pl-9 pr-3 py-2 text-sm text-gray-600 placeholder-gray-400 placeholder:font-normal placeholder:tracking-wide placeholder:text-[14px] bg-transparent focus:outline-none"/>
                                             </div>
 
                                             <div className="py-1">
