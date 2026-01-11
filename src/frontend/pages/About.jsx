@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import { SparklesIcon, ChevronRightIcon, AcademicCapIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, ChevronRightIcon, AcademicCapIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import Logo1 from "../../assets/logo/logo-1.png";
 import Logo2 from "../../assets/logo/logo-2.png";
 import Logo3 from "../../assets/logo/logo-3.png";
-import Logo4 from "../../assets/logo/logo-4.png"
-import Logo5 from "../../assets/logo/logo-5.png"
+import Logo4 from "../../assets/logo/logo-4.png";
+import Logo5 from "../../assets/logo/logo-5.png";
+import Logo6 from "../../assets/logo/logo-6.png";
 
 const experiences = [
     
@@ -91,9 +92,27 @@ const education = [
     }
 ];
 
+const organizations = [
+    {
+        name: "Himpunan Mahasiswa Informatika",
+        role: "Puskominfo (HIMAFOR)",
+        location: "Semarang, Central Java, Indonesia",
+        period: "2022 - Present",
+        duration: "3 years",
+        type: "Student Organization",
+        logo: Logo6,
+        responsibilities: [
+            "Participated in workshops and training sessions on web development",
+            "Collaborated with team members on club projects and events",
+            "Contributed to the development of club website and digital presence"
+        ]
+    }
+];
+
 export default function About() {
     const [expandedExp, setExpandedExp] = useState(null);
     const [expandedEdu, setExpandedEdu] = useState(null);
+    const [expandedOrg, setExpandedOrg] = useState(null);
 
     return (
         <div className="bg-white min-h-screen">
@@ -132,7 +151,7 @@ export default function About() {
                             <div className="mt-8 border-b border-gray-300 pb-8">
                                 <div className="flex items-center gap-x-2">
                                     <SparklesIcon className="h-5 w-5 text-gray-800" />
-                                    <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Career</h2>
+                                    <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Experience</h2>
                                 </div>
 
                                 <p className="mt-2 text-[15px] font-medium leading-normal tracking-tight text-gray-500">My professional journey.</p>
@@ -236,6 +255,66 @@ export default function About() {
                                                             <h4 className="text-[14px] font-semibold text-gray-700 mb-2.5">Activities and Achievements:</h4>
                                                             <ul className="space-y-2">
                                                                 {edu.responsibilities.map((resp, idx) => (
+                                                                    <li key={idx} className="flex items-start gap-x-2 text-[14px] text-gray-600 leading-normal">
+                                                                        <span className="text-blue-500 mt-1">•</span>
+                                                                        <span>{resp}</span>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="mt-8">
+                                <div className="flex items-center gap-x-2">
+                                    <UserGroupIcon className="h-5 w-5 text-gray-800" />
+                                    <h2 className="text-[20px] font-semibold leading-normal tracking-tight text-gray-700">Organizations</h2>
+                                </div>
+
+                                <p className="mt-2 text-[15px] font-medium leading-normal tracking-tight text-gray-500">My involvement in student organizations and communities.</p>
+
+                                <div className="mt-6 space-y-4">
+                                    {organizations.map((org, index) => (
+                                        <div key={index} className="group relative rounded-xl border border-gray-200 p-4 sm:p-5 transition-all duration-300">
+                                            <div className="flex flex-row items-start gap-4">
+                                                <div className="flex h-12 w-12 sm:h-14 sm:w-14 flex-none items-center justify-center rounded-xl">
+                                                    <img src={org.logo} alt={org.name} className="h-full w-full object-cover rounded-xl" />
+                                                </div>
+
+                                                <div className="flex-1 min-w-0">
+                                                    <h3 className="text-[15px] sm:text-[16px] font-semibold text-gray-900 leading-snug tracking-tight">
+                                                        {org.name}
+                                                    </h3>
+                                                    
+                                                    <div className="mt-1 flex flex-wrap items-center gap-x-1.5 text-[13px] text-gray-600 font-normal leading-relaxed">
+                                                        <span className="font-medium text-gray-500">{org.role}</span>
+                                                        <span className="text-gray-300 hidden sm:inline">/</span>
+                                                        <span className="text-gray-500">{org.location}</span>
+                                                    </div>
+
+                                                    <div className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] sm:text-[13px] text-gray-400 font-normal leading-normal">
+                                                        <span>{org.period}</span>
+                                                        <span className="text-gray-300">•</span>
+                                                        <span>{org.duration}</span>
+                                                        <span className="text-gray-300">•</span>
+                                                        <span>{org.type}</span>
+                                                    </div>
+
+                                                    <button onClick={() => setExpandedOrg(expandedOrg === index ? null : index)} className="mt-3.5 flex items-center gap-x-1 text-[13px] sm:text-[14px] font-semibold text-blue-600">
+                                                        <ChevronRightIcon className={`h-3.5 w-3.5 transition-transform duration-200 ${expandedOrg === index ? 'rotate-90' : ''}`} />
+                                                        {expandedOrg === index ? 'Hide' : 'Show'} responsibilities
+                                                    </button>
+
+                                                    {expandedOrg === index && (
+                                                        <div className="mt-4 pt-4 border-t border-gray-200">
+                                                            <h4 className="text-[14px] font-semibold text-gray-700 mb-2.5">Key Activities:</h4>
+                                                            <ul className="space-y-2">
+                                                                {org.responsibilities.map((resp, idx) => (
                                                                     <li key={idx} className="flex items-start gap-x-2 text-[14px] text-gray-600 leading-normal">
                                                                         <span className="text-blue-500 mt-1">•</span>
                                                                         <span>{resp}</span>
