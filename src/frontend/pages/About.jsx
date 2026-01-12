@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import { SparklesIcon, ChevronRightIcon, AcademicCapIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { SparklesIcon, ChevronRightIcon, AcademicCapIcon, UserGroupIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Logo1 from "../../assets/logo/logo-1.png";
 import Logo2 from "../../assets/logo/logo-2.png";
 import Logo3 from "../../assets/logo/logo-3.png";
@@ -131,7 +131,7 @@ export default function About() {
                                 <span>A brief introduction to who I am.</span>                                
                             </div>
                         
-                            <div className="mt-5 space-y-2.5">
+                            <div className="mt-5 space-y-2.5 border-b border-gray-200 pb-8">
                                 <p className="text-body leading-loose tracking-tight font-medium text-gray-600">
                                     Hello there! Thank you for visiting my personal website. I'm Riski Arya Putra, a student at Universitas Muhammadiyah Semarang, originally from Demak. I'm a Frontend Developer with a passion for building impactful software products. My expertise focuses on modern technologies like React, JavaScript, Tailwind CSS, Bootstrap, and Laravel.
                                 </p>
@@ -143,11 +143,18 @@ export default function About() {
                                 <p className="text-body leading-loose tracking-tight font-medium text-gray-600">
                                     I believe that great communication and team synergy are key to success in software development. My experience has shaped my technical and analytical skills, as well as my dedication to quality. I'm always excited to work in teams, learn from others, and contribute to impactful projects.
                                 </p>
-                            </div>
 
-                            <div className="mt-7 border-b border-gray-200 pb-7">
-                                <p className="text-[15px] font-medium text-gray-700 mb-1.5">Best regards,</p>
-                                <p className="font-signature text-[25px] font-bold text-blue-500">Riski Arya Putra</p>
+                                <div className="mt-6 flex flex-wrap gap-4">
+                                    <a href="/" download className="flex items-center gap-2 px-3 py-2.5 bg-blue-600 text-white rounded-lg leading-normal font-semibold text-[14px] shadow-sm shadow-blue-500/20 active:scale-95">
+                                        <ArrowDownTrayIcon className="h-4.5 w-4.5" />
+                                        <span>Download Resume</span>
+                                    </a>
+
+                                    <a href="/" download className="flex items-center gap-2 px-3 py-2.5 bg-white border border-gray-200 text-gray-700 rounded-lg leading-normal font-semibold text-[14px] hover:bg-gray-50 transition-all active:scale-95">
+                                        <ArrowDownTrayIcon className="h-4.5 w-4.5" />
+                                        <span>Download Portfolio</span>
+                                    </a>
+                                </div>
                             </div>
 
                             <div className="mt-6 border-b border-gray-300 pb-8">
