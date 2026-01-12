@@ -17,7 +17,7 @@ export default function Contact() {
                                 <span>Let`s get in touch.</span>                                
                             </div>
                         
-                            <div className="mt-7">
+                            <div className="mt-6">
                                 <h2 className="text-body font-semibold leading-normal tracking-wide text-gray-700 mb-3">Find me on social media</h2>
                                 
                             </div>

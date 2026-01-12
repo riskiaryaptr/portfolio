@@ -30,7 +30,7 @@ export default function AchievementModal({ achievement, onClose }) {
                         </div>
 
                         <div className="flex-1 min-h-[300px] lg:min-h-0 flex items-center justify-center p-2 lg:p-4">
-                            <img src={achievement.image} alt={achievement.title} className="max-w-full max-h-full object-contain rounded-md shadow-sm cursor-zoom-in" onClick={() => window.open(achievement.image, '_blank')}/>
+                            <img src={achievement.image} alt={achievement.title} className="max-w-full max-h-full object-contain rounded-lg shadow-sm cursor-zoom-in" onClick={() => window.open(achievement.image, '_blank')}/>
                         </div>
 
                         <div className="px-5 py-3 text-center border-t border-gray-100 bg-white/50">
