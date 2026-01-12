@@ -145,12 +145,12 @@ function About() {
                                 </p>
 
                                 <div className="mt-6 flex flex-wrap gap-4">
-                                    <a href="/" download className="flex items-center gap-2 px-3 py-2.5 bg-blue-600 text-white rounded-lg leading-normal font-semibold text-[14px] shadow-sm shadow-blue-500/20 active:scale-95">
+                                    <a href="/" download className="flex w-full sm:w-auto items-center justify-center gap-2 px-3 py-2.5 bg-blue-600 text-white rounded-lg leading-normal font-semibold text-[14px] shadow-sm shadow-blue-500/20 active:scale-95">
                                         <ArrowDownTrayIcon className="h-4.5 w-4.5" />
                                         <span>Download Resume</span>
                                     </a>
 
-                                    <a href="/" download className="flex items-center gap-2 px-3 py-2.5 bg-white border border-gray-200 text-gray-700 rounded-lg leading-normal font-semibold text-[14px] hover:bg-gray-50 transition-all active:scale-95">
+                                    <a href="/" download className="flex w-full sm:w-auto items-center justify-center gap-2 px-3 py-2.5 bg-white border border-gray-200 text-gray-700 rounded-lg leading-normal font-semibold text-[14px] hover:bg-gray-50 transition-all active:scale-95">
                                         <ArrowDownTrayIcon className="h-4.5 w-4.5" />
                                         <span>Download Portfolio</span>
                                     </a>
