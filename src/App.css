@@ -115,18 +115,5 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
-
-    .gradient-gmail {
-      @apply bg-gradient-to-br from-[#EA4335] to-[#C5221F];
-    }
-    .gradient-instagram {
-      @apply bg-gradient-to-br from-[#833AB4] via-[#F56040] to-[#FCAF45];
-    }
-    .gradient-linkedin {
-      @apply bg-gradient-to-br from-[#0077B5] to-[#00A0DC];
-    }
-    .gradient-github {
-      @apply bg-gradient-to-br from-[#0D1117] to-[#161B22];
-    }
   }
 }
