@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-export default function AchievementModal({ achievement, onClose }) {
+function AchievementModal({ achievement, onClose }) {
     const [isExpanded, setIsExpanded] = useState(false);
     
     if (!achievement) return null;
@@ -124,3 +124,5 @@ export default function AchievementModal({ achievement, onClose }) {
         </div>
     );
 }
+
+export default AchievementModal;

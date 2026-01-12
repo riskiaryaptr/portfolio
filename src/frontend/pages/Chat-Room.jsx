@@ -76,7 +76,7 @@ const chatMessages = [
     },
 ];
 
-export default function ChatRoom() {
+function ChatRoom() {
     return (
         <div className="bg-white min-h-screen">
             <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -150,3 +150,5 @@ export default function ChatRoom() {
         </div>
     );
 }
+
+export default ChatRoom;

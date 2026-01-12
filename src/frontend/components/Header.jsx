@@ -23,7 +23,7 @@ const navigation = [
     { name: "Contact", href: "/Contact", icon: EnvelopeOpenIcon },
 ];
 
-export default function Sidebar() {
+function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isAnimated, setIsAnimated] = useState(false);
     const [language, setLanguage] = useState("US");
@@ -200,3 +200,5 @@ export default function Sidebar() {
         </div>
     );
 }
+
+export default Header;

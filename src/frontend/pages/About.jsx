@@ -109,7 +109,7 @@ const organizations = [
     }
 ];
 
-export default function About() {
+function About() {
     const [expandedItem, setExpandedItem] = useState(null);
 
     const toggleAccordion = (id) => {
@@ -345,3 +345,5 @@ export default function About() {
         </div>
     );
 }
+
+export default About;

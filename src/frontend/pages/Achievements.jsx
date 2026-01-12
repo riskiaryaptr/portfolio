@@ -31,7 +31,7 @@ const achievements = [
     },
 ];
 
-export default function Achievements() {
+function Achievements() {
     const [searchQuery, setSearchQuery] = useState("");
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [selectedFilter, setSelectedFilter] = useState("Filter achievements");
@@ -154,3 +154,5 @@ export default function Achievements() {
         </div>
     );
 }
+
+export default Achievements;
