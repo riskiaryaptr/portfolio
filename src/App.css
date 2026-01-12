@@ -1,71 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 
 @layer base {
+  * {
+    font-family: "Nunito", sans-serif;
+  }
 
-    * {
-        font-family: 'Nunito', sans-serif;
+  .font-pretty {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .font-signature {
+    font-family: "Dancing Script", cursive;
+  }
+
+  @layer utilities {
+    .text-body {
+      font-size: 15.8px;
     }
 
-    .font-pretty {
-        font-family: 'Poppins', sans-serif;
+    .text-display {
+      font-size: 35px;
     }
 
-    .font-signature {
-        font-family: 'Dancing Script', cursive;
+    .chat-container {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .chat-container::-webkit-scrollbar {
+      display: none;
     }
 
-    @layer utilities {
-        .text-body {
-            font-size: 15.8px;
-        }
-
-        .text-display {
-            font-size: 35px;
-        }
-
-        .chat-container {
-            scrollbar-width: none;
-            -ms-overflow-style: none;   
-        }
-        .chat-container::-webkit-scrollbar {
-            display: none;
-        }
-
-        @media (min-width: 1024px) {
-            .chat-container {
-                scrollbar-width: thin;
-            }
-            .chat-container::-webkit-scrollbar {
-                display: block;
-                width: 5px;
-            }
-            .chat-container::-webkit-scrollbar-track {
-                background: transparent;
-            }
-            .chat-container::-webkit-scrollbar-thumb {
-                background: #e5e7eb;
-                border-radius: 10px;
-            }
-            .chat-container::-webkit-scrollbar-thumb:hover {
-                background: #d1d5db;
-            }
-        }
-
-        #desktop-sidebar {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            scroll-behavior: smooth;
-        }
-        
-        #desktop-sidebar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .google-blue { fill: #4285F4; }
-        .google-green { fill: #34A853; }
-        .google-yellow { fill: #FBBC05; }
-        .google-red { fill: #EA4335; }
+    @media (min-width: 1024px) {
+      .chat-container {
+        scrollbar-width: thin;
+      }
+      .chat-container::-webkit-scrollbar {
+        display: block;
+        width: 5px;
+      }
+      .chat-container::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .chat-container::-webkit-scrollbar-thumb {
+        background: #e5e7eb;
+        border-radius: 10px;
+      }
+      .chat-container::-webkit-scrollbar-thumb:hover {
+        background: #d1d5db;
+      }
     }
+
+    #desktop-sidebar {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-behavior: smooth;
+    }
+
+    #desktop-sidebar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .google-blue {
+      fill: #4285f4;
+    }
+    .google-green {
+      fill: #34a853;
+    }
+    .google-yellow {
+      fill: #fbbc05;
+    }
+    .google-red {
+      fill: #ea4335;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .animate-in {
+      animation-duration: 300ms;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      animation-fill-mode: forwards;
+    }
+
+    .fade-in {
+      animation-name: fadeIn;
+    }
+
+    .zoom-in-95 {
+      animation-name: zoomIn;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
 }
