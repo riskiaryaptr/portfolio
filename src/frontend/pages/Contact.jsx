@@ -9,7 +9,7 @@ export default function Contact() {
                     <Header />
 
                     <main className="flex-1 w-full py-28 lg:py-12">
-                        <div className="max-w-4xl">
+                        <div className="w-full">
                             <h1 className="text-[23px] font-bold tracking-tight leading-normal text-gray-800">
                                 Contact Me
                             </h1>

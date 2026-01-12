@@ -65,7 +65,7 @@ export default function Achievements() {
                 <div className="flex flex-col lg:flex-row gap-x-3 items-start">
                     <Header />
                     <main className="flex-1 py-28 lg:py-12">
-                        <div className="max-w-5xl">
+                        <div className="w-full">
                             <h1 className="text-[23px] font-bold tracking-tight leading-normal text-gray-800">
                                 Achievements
                             </h1>

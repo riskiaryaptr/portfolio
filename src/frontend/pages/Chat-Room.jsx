@@ -83,7 +83,7 @@ export default function ChatRoom() {
                 <div className="flex flex-col lg:flex-row gap-x-3 items-start">
                     <Header />
                     <main className="flex-1 py-28 lg:py-12">
-                        <div className="max-w-5xl">
+                        <div className="w-full">
                             <h1 className="text-[23px] font-bold tracking-tight leading-normal text-gray-800">
                                 Chat Room
                             </h1>
@@ -92,7 +92,7 @@ export default function ChatRoom() {
                                 <span>Feel free to share your thoughts, suggestions, questions, or anything else!</span>                                
                             </div>
 
-                            <div className="mt-6 space-y-6 max-h-[350px] overflow-y-auto px-0 lg:px-6 chat-container">
+                            <div className="mt-6 space-y-6 h-[340px] overflow-y-auto px-0 lg:px-6 chat-container">
                                 {chatMessages.map((chat) => (
                                     <div key={chat.id} className={`flex gap-x-3 group ${chat.isOwner ? 'flex-row-reverse' : ''}`}>
                                         <img src={chat.avatar} alt={chat.name} className="h-8 w-8 rounded-full flex-shrink-0" />
@@ -104,7 +104,7 @@ export default function ChatRoom() {
                                             </div>
                                             
                                             <div className={`flex items-center gap-x-2 ${chat.isOwner ? 'flex-row-reverse' : ''}`}>
-                                                <div className={`${chat.isOwner ? 'bg-blue-500 text-white rounded-xl rounded-tr-none' : 'bg-gray-100 text-gray-800 rounded-xl rounded-tl-none'} px-3 py-2 inline-block max-w-2xl`}>
+                                                <div className={`${chat.isOwner ? 'bg-blue-500 text-white rounded-xl rounded-tr-none' : 'bg-gray-100 text-gray-800 rounded-xl rounded-tl-none'} px-3 py-2 inline-block max-w-full`}>
                                                     <p className="text-sm">{chat.message}</p>
                                                 </div>
                                                 
@@ -125,7 +125,7 @@ export default function ChatRoom() {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                                    <button className="flex items-center justify-center gap-x-2 px-6 py-2.5 bg-white border border-gray-300 rounded-lg text-sm/6 leading-normal tracking-wide font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                                    <button className="flex items-center justify-center gap-x-2 px-6 py-2.5 bg-white border border-gray-300 rounded-lg text-sm/6 leading-normal tracking-wide font-semibold text-gray-700">
                                         <svg className="h-5 w-5" viewBox="0 0 24 24">
                                             <path className="google-blue" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                                             <path className="google-green" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
